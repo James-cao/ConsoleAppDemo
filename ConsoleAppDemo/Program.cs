@@ -25,7 +25,7 @@ namespace ConsoleAppDemo
                 System.Console.WriteLine("五花");
             }
 
-            if (lst.Count == 5 || lst.Count == 4) 
+            if (lst.Count == 5 || lst.Count == 4)
             {
                 var findPoint = 0;
                 for (int i = 0; i < lst.Count; i++)   //两张牌相加，再找点数（三张牌和为10）
@@ -60,14 +60,10 @@ namespace ConsoleAppDemo
                         if (findPoint > 0)
                         {
                             System.Console.WriteLine("牛{0}", cards.Max(x => x));
-                            break;
-
+                            return;
                         }
                     }
-                    if (findPoint > 0)
-                    {
-                        break;
-                    }
+
                 }
                 if (findPoint == 0)
                 {
