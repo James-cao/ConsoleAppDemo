@@ -69,7 +69,6 @@ namespace ConsoleAppDemo
                 {
                     System.Console.WriteLine("无牛,{0}点大", cards.Max(x => x));
                 }
-
             }
 
             if (lst.Count == 3) //说明有两张为十的位数
@@ -88,7 +87,6 @@ namespace ConsoleAppDemo
                 {
                     System.Console.WriteLine("无牛");
                 }
-
             }
 
             if (lst.Count == 2) //如果前三张都是10的倍数，剩下两张之和除10得到余数，就是点数。
